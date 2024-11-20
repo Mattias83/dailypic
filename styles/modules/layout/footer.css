@@ -1,0 +1,28 @@
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer ul li {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+footer ul li:first-child {
+    margin-right: auto;
+}
+
+footer ul li:last-child {
+    margin-left: auto;
+}
+
+footer ul li a {
+    color: white;
+}
+
+@media(max-width: 440px) {
+    footer ul li {
+        font-size: 1rem;
+    }
+}

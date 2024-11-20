@@ -1,0 +1,61 @@
+.dailypic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic img {
+    background-color: black;
+    width: 100%;
+    max-width: 800px;
+}
+
+.pic h2 {
+    font-size: 2rem;
+    align-self: center;
+    color: white;
+    border-bottom: 3px solid var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.nav-right {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    cursor: pointer;
+}
+
+.nav-left {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    cursor: pointer;
+}
+
+.nav-left svg,
+.nav-right svg {
+    fill: var(--accent-color);
+    animation: change-colors 3s ease-in-out infinite;
+}
+
+@keyframes change-colors {
+    0% {
+        fill: white;
+    }
+
+    50% {
+        fill: var(--accent-color);
+        filter: blur(2px);
+    }
+
+    100% {
+        fill: white;
+    }
+}

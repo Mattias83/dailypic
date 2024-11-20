@@ -1,0 +1,57 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 50rem;
+    height: 100%;
+    max-height: 50rem;
+    position: relative;
+}
+
+.contact-form input[type=text] {
+    height: 2.5rem;
+    outline: none;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    border: 2px solid orange;
+}
+
+.contact-form textarea {
+    outline: none;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    border: 2px solid orange;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 1.2rem;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    width: fit-content;
+    align-self: flex-end;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: white;
+    box-shadow: 3px 3px 2px orange;
+}
+
+.contact-form button:active {
+    transform: translateY(3px);
+}
+
+.contact-form label {
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+.contact-form p {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    font-size: 1.4rem;
+}

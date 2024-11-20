@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* base */
+@import "modules/base/reset.css";
+@import "modules/base/root.css";
+@import "modules/base/html.css";
+@import "modules/base/body.css";
+
+/* components */
+@import "modules/components/brand.css";
+@import "modules/components/navbar.css";
+
+/* layout */
+@import "modules/layout/container.css";
+@import "modules/layout/main.css";
+@import "modules/layout/dailypic.css";
+@import "modules/layout/footer.css";
+@import "modules/layout/about.css";
+@import "modules/layout/contact.css";
