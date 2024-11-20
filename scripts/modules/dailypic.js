@@ -53,7 +53,7 @@ if (isTouchDevice()) {
     navLeft.style.display = "none";
     navRight.style.display = "none";
     const mobileMessage = document.querySelector(".mobile-message");
-    mobileMessage.style.display = "none";
+    mobileMessage.style.display = "block";
 
     let touchStartX = 0;
     let touchStartY = 0;
