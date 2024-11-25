@@ -3,3 +3,8 @@
     margin: 0 2rem;
     text-align: center;
 }
+
+.about-image {
+    width: 100%;
+    max-width: 800px;
+}
