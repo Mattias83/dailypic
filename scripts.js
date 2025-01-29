@@ -2,17 +2,14 @@ let images = [];
 let currentImageIndex = 0;
 
 const dailyPicsDiv = document.querySelector(".daily-image");
-const imageContainer = document.querySelector(".daily-image img");
 const dateContainer = document.querySelector("main h2");
-const navLeft = document.querySelector(".daily-image #left");
-const navRight = document.querySelector(".daily-image #right");
 
-navLeft.addEventListener("click", (e) => {
+document.querySelector(".daily-image #left").addEventListener("click", (e) => {
     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
     updateImage()
 });
 
-navRight.addEventListener("click", (e) => {
+document.querySelector(".daily-image #right").addEventListener("click", (e) => {
     currentImageIndex = (currentImageIndex + 1) % images.length;
     updateImage()
 });
