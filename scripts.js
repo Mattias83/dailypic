@@ -1,15 +1,18 @@
-let images = [];
+let images = ["24-11-19.webp","24-11-20.webp","24-11-21.webp"];
 let currentImageIndex = 0;
 
+const imageContainer = document.querySelector(".daily-image img");
 const dailyPicsDiv = document.querySelector(".daily-image");
 const dateContainer = document.querySelector("main h2");
+const navLeft = document.querySelector("#left");
+const navRight = document.querySelector("#right");
 
-document.querySelector(".daily-image #left").addEventListener("click", (e) => {
+navLeft.addEventListener("click", (e) => {
     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
     updateImage()
 });
 
-document.querySelector(".daily-image #right").addEventListener("click", (e) => {
+navRight.addEventListener("click", (e) => {
     currentImageIndex = (currentImageIndex + 1) % images.length;
     updateImage()
 });
